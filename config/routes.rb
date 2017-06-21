@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'posts#index'
   resources :posts
   get '/login', to: 'sessions#new', as: 'login'
+  get '/auth/github/callback', to: 'sessions#create'
 end
