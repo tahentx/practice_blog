@@ -1,9 +1,10 @@
 <h1>My Blog Posts</h1>
 <div>
-	<p>
 	<% @posts.each do |post| %>
-	<%= post.title %>
-	<%= post.text %>
+	<tr>
+	<td><%= post.title %></td><br>
+	<td><%= post.text %></td><br>
+	<td><%= link_to 'Edit', edit_post_path(post) %></td><br>
+	</tr>
 	<% end %>
-	</p>
 </div>
