@@ -7,8 +7,8 @@
 	<tr>
 	<td><%= post.title %></td><br>
 	<td><%= post.text %></td><br>
-	<td><%= link_to 'Edit', edit_post_path(post) %></td><br>
-	<td><%= link_to 'Delete', post_path(post), method: :delete %></td><br>
+	<td><%= link_to 'Edit', edit_post_path(post.uuid) %></td><br>
+	<td><%= link_to 'Delete', post_path(post.uuid), method: :delete %></td><br>
 	</tr>
 	<% end %>
 </div>
