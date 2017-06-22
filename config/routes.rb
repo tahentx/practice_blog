@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :posts
   get '/login', to: 'sessions#new', as: 'login'
   get '/auth/github/callback', to: 'users#create'
+  get '/logout', to: 'sessions#destroy'
 end
