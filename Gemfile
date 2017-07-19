@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'omniauth', '~> 1.6', '>= 1.6.1'
 gem 'omniauth-github', '~> 1.1', '>= 1.1.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
